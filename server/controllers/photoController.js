@@ -4,7 +4,8 @@ const postPhoto = (req,res)=>{
   Photo.create({
     image: req.file.cloudStoragePublicUrl,
     posted_by :req.body.posted_by,
-    love: req.body.love
+    love: req.body.love,
+    caption: req.body.caption
   })
   .then(result=>{
     // console.log(result)

@@ -9,6 +9,9 @@ const photoSchema = new Schema ({
   posted_by : { type: Schema.Types.ObjectId, ref : 'User', required: true},
   love:{
     type: Schema.Types.ObjectId, ref : 'User'
+  },
+  caption:{
+    type:String
   }
 })
 
